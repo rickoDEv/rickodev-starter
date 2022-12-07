@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="retro">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="halloween">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
         <script is:inline>
             // ☝️ This script prevent the FART effect.
             if (localStorage.getItem("theme") === null) {
-                document.documentElement.setAttribute("data-theme", "retro");
+                document.documentElement.setAttribute("data-theme", "halloween");
             } else
                 document.documentElement.setAttribute(
                     "data-theme",
