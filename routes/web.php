@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,12 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
+
+    $recipient = auth()->user();
+Notification::make()
+    ->title('Saved successfully')
+    ->sendToDatabase($recipient);
+
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 

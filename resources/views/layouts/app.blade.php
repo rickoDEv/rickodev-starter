@@ -71,6 +71,7 @@
 
 @livewireScripts
 @powerGridScripts
+
 </body>
 
 </html>

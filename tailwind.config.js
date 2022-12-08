@@ -8,7 +8,9 @@ module.exports = {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         './vendor/power-components/livewire-powergrid/resources/views/**/*.php',
-        './vendor/power-components/livewire-powergrid/src/Themes/Tailwind.php'
+        './app/Http/Livewire/PowerGrid/*.php',
+        './app/Http/Livewire/**/*Table.php',
+        './vendor/filament/**/*.blade.php',
     ],
     theme: {
         extend: {
