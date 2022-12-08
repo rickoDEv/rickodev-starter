@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="night">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="forest">
 
 <head>
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
     <script is:inline>
         // ☝️ This script prevent the FART effect.
         if (localStorage.getItem("theme") === null) {
-            document.documentElement.setAttribute("data-theme", "night");
+            document.documentElement.setAttribute("data-theme", "forest");
         } else
             document.documentElement.setAttribute(
                 "data-theme",

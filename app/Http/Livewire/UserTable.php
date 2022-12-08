@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Http\Livewire\PowerGridThemes\Tailwind;
 use App\Models\User;
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Builder;
@@ -34,6 +35,11 @@ final class UserTable extends PowerGridComponent
                 ->showRecordCount(),
         ];
     }
+
+//    public function template(): string
+//    {
+//        return Tailwind::class;
+//    }
 
     /*
     |--------------------------------------------------------------------------
